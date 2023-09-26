@@ -12,4 +12,6 @@ Our team consists of **KM-01** students who are passionate about information sys
 - Саяпіна Інна Олександрівна (???)
 ## Questions and Support
 For any questions, assistance, or discussions related to this repository, please don't hesitate to reach out. You can create an issue or contact the repository maintainers.
-### [Official website of the Institute](https://kpi.ua)
+## Links
+- [Official website of the Institute](https://kpi.ua)
+- [Our site(project)](https://smertelboll.github.io/pizza-shop/)
