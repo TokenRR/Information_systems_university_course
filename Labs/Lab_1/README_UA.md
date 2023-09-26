@@ -1,4 +1,4 @@
-# Лабораторная робота № 1   |   [README_ENG]()
+# Лабораторная робота № 1   |   [README_ENG](https://github.com/TokenRR/Information_systems/blob/main/Labs/Lab_1/README_ENG.md)
 ---
 ## Склад команди
 - Romanetskiy Nick ([@TokenRR](https://github.com/TokenRR))

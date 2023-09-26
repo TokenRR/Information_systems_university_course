@@ -1,4 +1,4 @@
-# Laboratory work № 1   |   [README_UA]()
+# Laboratory work № 1   |   [README_UA](https://github.com/TokenRR/Information_systems/blob/main/Labs/Lab_1/README_UA.md)
 ---
 ## Team lineup
 - Romanetskiy Nick ([@TokenRR](https://github.com/TokenRR))
@@ -53,7 +53,7 @@ ___
     - _Due to the limited material resources, the free service **Supabase** will be used for data storage, as it is easy to use and the team has experience with it._
 3. __Deadline__.
     - _The system must be developed by December 31, 2023_
-    (Reason: The project is made for presentation in the subject 'Information Systems' at Ihor Sikorsky Kyiv Polytechnic Institute)
+    (Reason: The project is made for presentation in the subject 'Information Systems' at Igor Sikorsky Kyiv Polytechnic Institute)
 ---
 ## Functional Requirements
 1. __Authentication and Authorization:__
