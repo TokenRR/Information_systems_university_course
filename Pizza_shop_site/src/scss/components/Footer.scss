@@ -1,0 +1,123 @@
+.footer {
+   padding: 30px 40px;
+   border-top: 1px solid #F6F6F6;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   color: #282828;
+
+   &__logo-and-text {
+      display: flex;
+      white-space: nowrap;
+
+      img {
+         margin-right: 15px;
+      }
+   }
+
+   &__info {
+      display: flex;
+      max-width: 50%;
+      width: 100%;
+      justify-content: space-around;
+      margin: 0 10px;
+   }
+
+   &__info-item {
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.3s ease 0s;
+      position: relative;
+
+      &::after {
+         content: '';
+         display: block;
+         position: absolute;
+         left: 0; 
+         width: 30%;
+         height: 1.5px;
+         background-color: #282828;
+         transition: width 0.3s ease-out;
+      }
+
+      &:hover, &:focus {
+         &:after {
+            width: 100%;
+         }
+
+      }
+   }
+
+   &__contact {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      white-space: nowrap;
+   }
+
+   &__contact-tel {
+      font-size: 20px;
+      line-height: 22px;
+      font-weight: 500;
+   }
+
+   &__contact-text {
+      font-size: 14px;
+   }
+}
+
+@media (max-width: 1024px) {
+   .footer {
+      padding: 30px;
+   }
+}
+
+@media (max-width: 768px) {
+   .footer {
+      &__info {
+         flex-direction: column;
+         align-items: center;
+         width: auto;
+      }
+
+      &__info-item {
+         margin-bottom: 6px;
+         
+
+         &:last-child {
+            margin-bottom: 0px;
+         }
+      }
+   }
+}
+
+@media (max-width: 540px) {
+   .footer {
+      flex-wrap: wrap;
+      &__logo-and-text {
+         order: 2;
+      }
+      &__info {
+         order: 1;
+         flex-direction: row;
+         min-width: 100%;
+         margin: 0;
+         margin-bottom: 20px;
+      }
+
+      &__contact {
+         order: 3;
+      }
+   }
+}
+
+@media (max-width: 480px) {
+   .footer {
+      display: none;
+   }
+}

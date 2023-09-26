@@ -1,0 +1,134 @@
+.category {
+   display: flex;
+   align-items: center;
+
+   &__item {
+      height: 46px;
+      padding: 0 35px;
+      background: #F9F9F9;
+      border-radius: 30px;
+      margin-right: 10px;
+      
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 0.015em;
+
+      transition: all 0.2s ease 0s;
+
+      &:hover {
+         transition: all 0.2s ease 0s;
+         background: #282828;
+         color: #FFFFFF;
+      }
+
+      &:last-child {
+         margin-right: 0px;
+      }
+   }
+
+   &__active {
+      background: #282828;
+      color: #FFFFFF;
+   }
+
+   &__more-item {
+      display: none;
+   }
+
+   &__text {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.015em;
+
+      margin-right: 10px;
+   }
+
+   &__small-screen {
+      position: relative;
+   }
+
+   &__label {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.015em;
+      color: #2C2C2C;
+      margin-right: 15px;
+
+      display: none;
+   }
+
+   &__first-button {
+      display: none;
+   }
+}
+
+@media (max-width: 1100px) {
+   .category {
+      
+      &__label {
+         display: block;
+      }
+
+      &__first-button {
+         display: block;
+      }
+
+      &__popup {
+         display: flex;
+         flex-direction: column;
+         padding: 10px 0px;
+         position: absolute;
+         left: 88.19px;
+         top: 56px;
+         z-index: 10;
+         background-color: #FFFFFF;
+         border-radius: 15px;
+         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+
+         button {
+            border-radius: 0;
+            background-color: #FFFFFF;
+
+            &.category__active {
+               color: #000;
+               background-color: #28282852;
+               margin-bottom: 0;
+            }
+         }
+      }
+
+      &__popup-active {
+         display: flex;
+      }
+
+      &__popup-inactive {
+         display: none;
+      }
+
+      &__small-screen {
+         display: flex;
+         align-items: center;
+      }
+
+      &__item {
+         margin-right: 0;
+      }
+
+   }
+}
+
+@media (max-width: 600px) {
+   .category {
+      margin-bottom: 20px;
+
+      &__popup {
+         left: 50%;
+         transform: translateX(-50%);
+      }
+   }
+}
+

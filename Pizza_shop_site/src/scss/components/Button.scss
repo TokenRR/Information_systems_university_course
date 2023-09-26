@@ -1,0 +1,51 @@
+.header-button{
+   display: flex;
+   height: 50px;
+   align-items: center;
+   background-color: #FE5F1E;
+   border-radius: 30px;
+   color: #fff;
+   
+   &__price{
+      border-right: 1px solid #fff;
+      padding: 0px 13px 0px 23px;
+      white-space: nowrap;
+      line-height: 25px;
+      font-weight: 500;
+      font-size: 16px;
+   }
+
+   &__number-and-icon{
+      display: flex;
+      padding: 0px 23px 0px 14px;
+      align-items: center;
+      
+   }
+
+   &__icon{
+      margin-right: 8px;
+   }
+
+   &__number{
+      line-height: 25px;
+      font-weight: 500;
+      font-size: 16px;
+   }
+}
+
+
+@media (max-width: 480px) {
+   .header-button {
+      position: fixed;
+      width: 100%;
+      border-radius: 0;
+      bottom: 0px;
+      left: 0px;
+      justify-content: center;
+      z-index: 10;
+
+      &__price, &__number {
+         font-size: 20px;
+      }
+   }
+}
