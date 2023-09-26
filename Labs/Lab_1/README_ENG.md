@@ -1,4 +1,5 @@
-# Laboratory work № 1   |   [README_UA](https://github.com/TokenRR/Information_systems/blob/main/Labs/Lab_1/README_UA.md)
+# Laboratory work № 1
+##### [README_UA](https://github.com/TokenRR/Information_systems/blob/main/Labs/Lab_1/README_UA.md)
 ---
 ## Team lineup
 - Romanetskiy Nick ([@TokenRR](https://github.com/TokenRR))
