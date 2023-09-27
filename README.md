@@ -6,7 +6,7 @@ _Welcome to the Team Repository for the Information Systems course at Kyiv Natio
 Our team consists of **KM-01** students who are passionate about information systems and strive to deepen our understanding and knowledge in this field. This repository serves as a platform for us to collaborate, learn, and contribute to the academic community.
 ## Team lineup
 - Romanetskiy Nick ([@TokenRR](https://github.com/TokenRR))
-- Lyubomyr Sholop ([@SmertelBoll](https://github.com/SmertelBoll))
+- Sholop Lyubomyr ([@SmertelBoll](https://github.com/SmertelBoll))
 - Reznychenko Eliza ([@Elishava](https://github.com/Elishava))
 ## Mentor
 - Саяпіна Інна Олександрівна (???)

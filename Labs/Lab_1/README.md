@@ -3,7 +3,7 @@
 ---
 ## Склад команди
 - Romanetskiy Nick ([@TokenRR](https://github.com/TokenRR))
-- Lyubomyr Sholop ([@SmertelBoll](https://github.com/SmertelBoll))
+- Sholop Lyubomyr ([@SmertelBoll](https://github.com/SmertelBoll))
 - Reznychenko Eliza ([@Elishava](https://github.com/Elishava))
 ---
 ## Суть застосунку
