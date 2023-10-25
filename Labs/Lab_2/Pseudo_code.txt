@@ -1,0 +1,93 @@
+Sequence diagram
+
+@startuml
+!theme crt-amber
+skinparam packageStyle rectangle
+actor Клієнт as client
+actor Служба_доставки as delivery
+actor Піцерія as pizzeria
+rectangle Pizza_shop {
+  client -- (Аутентифікація_та_авторизація)
+  (Аутентифікація_та_авторизація) -- (Головне_меню)
+  (Головне_меню) -- (Налаштування)
+  (Налаштування) -- (Зміна адреси доставки) : <<extend>>
+  (Налаштування) -- (Зміна ПІБ) : <<extend>>
+  (Аутентифікація_та_авторизація) <.. (Попередня реєстрація за відсутності облікового запису) : <<extend>>
+  (Головне_меню) ..> (Додавання_до_кошика) : <<include>>
+  (Додавання_до_кошика) ..> (Редагування_кошика) : <<extend>>
+  (Редагування_кошика) ..> (Оплата) : <<include>>
+  (Оплата) ..> (Вибір_компанії_доставки) : <<include>>
+  (Вибір_компанії_доставки) --> delivery
+  delivery --> pizzeria
+}
+@enduml
+
+------------------------------------------------------------------------------------------------------------------------
+
+Use_case_add_to_cart
+
+@startuml
+!theme crt-amber
+title Додавання до кошика
+hide footbox
+actor Клієнт as client
+participant "UI Додаток" as ui
+participant "Головне меню" as menu
+participant "Local Storage" as storage
+
+client -> ui: Запуск
+activate ui
+ui -> client: Відкриття головного меню
+deactivate ui
+
+client -> menu: Вибір піци
+activate menu
+menu -> storage: Оновлення Local Storage
+activate storage
+storage -> menu: Повернення данних
+deactivate storage
+menu -> client: Повернення актуального замовлення
+deactivate menu
+
+@enduml
+
+------------------------------------------------------------------------------------------------------------------------
+
+Use_case_edit_cart
+
+*Втрачено*
+
+------------------------------------------------------------------------------------------------------------------------
+
+Use_case_change_adress
+
+@startuml
+!theme crt-amber
+title Зміна адреси доставки
+hide footbox
+actor Клієнт as client
+participant "UI Додаток" as ui
+participant "Головне меню" as menu
+participant "Налаштування" as cart
+participant "Хмарне сховище" as storage
+
+client -> ui: Запуск
+activate ui
+ui -> client: Відкриття головного меню
+deactivate ui
+
+client -> menu: Вибір розділу 'Налаштування'
+activate menu
+menu -> client: Відкриття відповідно розділу
+deactivate menu
+
+client -> cart: Зміна адреси доставки
+activate cart
+cart -> storage: Відправлення даних на 'хмару'
+activate storage
+storage -> cart: Повернення оновлених данних
+deactivate storage
+cart -> client: Відображення змін
+deactivate cart
+
+@enduml
