@@ -9,9 +9,9 @@ Our team consists of **KM-01** students who are passionate about information sys
 - Sholop Lyubomyr ([@SmertelBoll](https://github.com/SmertelBoll))
 - Reznychenko Eliza ([@Elishava](https://github.com/Elishava))
 ## Mentor
-- Саяпіна Інна Олександрівна (???)
+- Саяпіна Інна Олександрівна ([@mickey77](https://github.com/mickey77))
 ## Questions and Support
 For any questions, assistance, or discussions related to this repository, please don't hesitate to reach out. You can create an issue or contact the repository maintainers.
 ## Links
 - [Official website of the Institute](https://kpi.ua)
-- [Our site(project)](https://smertelboll.github.io/pizza-shop/)
+- [Our site (project)](https://smertelboll.github.io/pizza_IC/)
